@@ -1,0 +1,4 @@
+.env
+accounts.csv
+__pycache__/
+*.pyc
