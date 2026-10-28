@@ -1,5 +1,7 @@
 # Job Posting Intel
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/jaizendra-netizen/job-posting-intel)
+
 **Extract intent from job postings with Claude + Blitz API.**
 
 > Built and maintained by [OneGTMLab](https://www.onegtmlab.dev). Blitz API review and the full GTM tool directory: https://www.onegtmlab.dev/tool-directory
