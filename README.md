@@ -91,4 +91,6 @@ MIT — take it, run it, adapt it to your ICP.
 
 ---
 
-Built by [OneGTMLab](https://onegtmlab.com). Works for any ICP; sharpest for dev tools, cybersecurity, and software-development companies, whose postings name their exact stack.
+Built by [OneGTMLab](https://www.onegtmlab.dev). Works for any ICP; sharpest for dev tools, cybersecurity, and software-development companies, whose postings name their exact stack.
+
+More free GTM systems and tool reviews: [onegtmlab.dev/tool-directory](https://www.onegtmlab.dev/tool-directory).
