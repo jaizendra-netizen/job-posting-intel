@@ -2,6 +2,8 @@
 
 **Extract intent from job postings with Claude + Blitz API.**
 
+> Built and maintained by [OneGTMLab](https://www.onegtmlab.dev). Blitz API review and the full GTM tool directory: https://www.onegtmlab.dev/tool-directory
+
 Job postings are the highest-signal account-research source that exists. A single posting tells you the real tech stack (tools named in requirements), where the company is heading (new roles = new initiatives), the budget (comp ranges × open-role count), the org hierarchy (who the role reports to), and the pain (the responsibilities section, written by the buyer themselves).
 
 BuiltWith shows you the website. **Job postings show you the roadmap.**
