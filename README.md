@@ -17,7 +17,7 @@ account list ──► Blitz API ──► Supabase (raw postings) ──► Cla
                  (pull)         (store)                    (decode · map · score · draft)
 ```
 
-Intent platforms charge $20k+/year for this layer. This runs a 1,000-account sweep in minutes for $0 on Blitz's unlimited plan (free trial covers pilots).
+This runs the intent layer on your own Blitz and Anthropic keys; a free Blitz trial covers pilots.
 
 ---
 
@@ -41,7 +41,7 @@ Intent platforms charge $20k+/year for this layer. This runs a 1,000-account swe
 ## Quickstart
 
 ```bash
-git clone https://github.com/onegtmlab/job-posting-intel.git
+git clone https://github.com/jaizendra-netizen/job-posting-intel.git
 cd job-posting-intel
 pip install requests
 
@@ -74,20 +74,12 @@ python scripts/research.py
 | [`prompts/03_score.md`](prompts/03_score.md) | The ICP scoring prompt. |
 | [`prompts/04_outreach.md`](prompts/04_outreach.md) | The movement-first outreach prompt. |
 
-## Real decodes this produced (anonymized)
-
-- A ~600-person healthcare AI company opened **6 security roles at once**, every posting saying *"one of the first engineers on the security team"* → an entire security org being built from scratch; every tool decision still open.
-- A ~1,400-person fintech asks the new hire to *"define governance and controls for Agentic AI Workflows and Non-Human Identities"* → rolling out AI agents; nobody secures them yet.
-- A ~3,300-person market-intelligence company is hiring an AI Security Analyst to hunt *"shadow AI and rogue agent activity"* → the problem is already loose inside.
-- A ~2,600-person revenue-AI company opened a *"Head of AI Security"* seat → new function at leadership level; budget approved.
-
-You see **why** they are hiring, not just that they are hiring. Outreach that opens with the movement gets answered.
 
 ## Requirements
 
 - [Blitz API](https://www.blitz-api.ai) key — free trial gives 1,000 credits; unlimited plan makes every endpoint free
 - [Supabase](https://supabase.com) project — free tier is plenty
-- [Anthropic API](https://console.anthropic.com) key — Sonnet for bulk decode, ~$1–3 per 1,000 postings
+- [Anthropic API](https://console.anthropic.com) key — Sonnet for bulk decode
 
 ## License
 
@@ -98,3 +90,9 @@ MIT — take it, run it, adapt it to your ICP.
 Built by [OneGTMLab](https://www.onegtmlab.dev). Works for any ICP; sharpest for dev tools, cybersecurity, and software-development companies, whose postings name their exact stack.
 
 More free GTM systems and tool reviews: [onegtmlab.dev/tool-directory](https://www.onegtmlab.dev/tool-directory).
+
+## Use as a Claude Agent Skill
+
+This repo ships a ready-to-install Claude Code skill in `skills/job-posting-intel/`. Copy that folder into `~/.claude/skills/` (or your project's `.claude/skills/`), then ask Claude Code to find hiring intent at your target accounts. The skill calls the scripts in this repo by path, so keep the repo cloned.
+
+Built by [OneGTMLab](https://www.onegtmlab.dev). License: MIT.
